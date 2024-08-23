@@ -12,9 +12,9 @@ TRIMMED_DIRECTORY=/path/to/trimmed_data
 DECONTAM_OUTPUT=/path/to/decontam_output_directory
 
 
-for file in ${TRIMMED_DIRECTORY}/*_fastp_trimmed_*.fastq.gz
+for file in ${TRIMMED_DIRECTORY}/*.fastq.gz
 do
-   name=$(basename ${file} _fastp_trimmed_*.fastq.gz)
+   name=$(basename ${file} .fastq.gz)
    echo $name
    ### 'ref' can be one or multiple comma separated fastq.gz containing reads from lab/extraction blanks.
    bbduk.sh in=${file} out=${DECONTAM_OUTPUT}/${name}_decontam.fastq.gz outm=${DECONTAM_OUTPUT}/${name}_matched.fastq.gz ref=/path/to/modern_contaminates k=25 qhist=1 stats=stats.txt t=${SLURM_CPUS_PER_TASK} -Xmx180g
