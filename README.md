@@ -33,6 +33,8 @@ A collection of scripts pertaining to quality filtering, decontamination and aDN
 
 - **PATH**: Throughout the pipeline, we assume all software packages are installed in your `PATH`. If you do not have administrator access for install, it would be best to give explicit paths to each install.
 
+- **Decontamination**: In order to use `BBduk` to decontaminate samples, you must have a 'modern' sample (or experimental equivalent for your question) to use as a source.
+
 
 
 ## Basic workflow
