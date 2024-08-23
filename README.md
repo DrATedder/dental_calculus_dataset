@@ -31,6 +31,10 @@ A collection of scripts pertaining to quality filtering, decontamination and aDN
 
 - **Parameters & assumptions**: Please read closely the manuals for each software. Parameters and thresholds will need to be adapted to suit biological, computational and logic criteria associated with your data/questions.
 
+- **PATH**: Throughout the pipeline, we assume all software packages are installed in your `PATH`. If you do not have administrator access for install, it would be best to give explicit paths to each install.
+
+
+
 ## Basic workflow
 
 **Quality filtering steps**
