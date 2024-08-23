@@ -17,4 +17,5 @@ for file in ${PAIRED_INPUT}/*_1_paired.fastq.gz
    name=$(basename ${file} _1_paired.fastq.gz)
    echo $name
    centrifuge -p $SLURM_CPUS_PER_TASK -x /storage02/data/centrifuge-dbs/park-et-al-2020/hpvc -1 ${PAIRED_INPUT}/${name}_1_paired.fastq.gz -2 ${PAIRED_INPUT}/${name}_2_paired.fastq.gz -S ${CENT_OUTPUT}/${name}_centrifugeOutputs.txt --report-file ${CENT_OUTPUT}/${name}_centrifugeReport.txt
+   grep '9606' ${CENT_OUTPUT}/${name}_centrifugeOutputs.txt | cut -f1 > ${CENT_OUTPUT}/${name}_human_reads.txt 
 done
