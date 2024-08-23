@@ -11,6 +11,8 @@ A collection of scripts pertaining to quality filtering, decontamination and aDN
 
 - `Trimmomatic v0.39`: Performs quality trimming protocols linked to paired end reads [(Bolger et al, 2014)](https://academic.oup.com/bioinformatics/article/30/15/2114/2390096). Can be accessed/downloaded [here](https://github.com/usadellab/Trimmomatic).
 
+- `Centrifuge v1.0.4.1`: OTU assignment tool [(Kim et al, 2016)](https://genome.cshlp.org/content/26/12/1721). Can be accessed/downloaded [here](https://github.com/DaehwanKimLab/centrifuge)
+
 - `Seqtk v1.4`: A tool to proccess and manipulate FASTA & FATQ files. Can be accessed/downloaded [here](https://github.com/lh3/seqtk).
 
 - `BWA v0.7.17`: A sequence mapping tool [(Li and Durbin 2009)](http://www.ncbi.nlm.nih.gov/pubmed/19451168). Can be accessed/downloaded [here](https://github.com/lh3/bwa).
@@ -54,6 +56,7 @@ A collection of scripts pertaining to quality filtering, decontamination and aDN
 
 **aDNA authentication**
 
+- `Centrifuge`: script name...
 - `Seqtk`: script name...
 - `BWA mem`: script name...
 - `SAMtools`: script name...
