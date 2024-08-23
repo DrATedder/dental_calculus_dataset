@@ -1,4 +1,4 @@
-# dental_calculus_dataset
+xxx# dental_calculus_dataset
 A collection of scripts pertaining to quality filtering, decontamination and aDNA authentication steps undertaken in Standeven et al. 2024
 
 ## Software pre-requisites
@@ -30,5 +30,25 @@ A collection of scripts pertaining to quality filtering, decontamination and aDN
 - **Job submission system**: Given the likely size of data files being analysed in these steps, we assume you will be using a batch job submission system. Here we will be using [SLURM](https://slurm.schedmd.com/documentation.html). If your system is different, please do take a look through the script to adjust relevant sections. This is mainly relevant for threading of various pipeline elements. For example: `-t ${SLURM_CPUS_PER_TASK}` If you are not using a job submission system, it *may* be possible to simply replace these incidences with an appropriate number of threads linked to your own system.
 
 - **Parameters & assumptions**: Please read closely the manuals for each software. Parameters and thresholds will need to be adapted to suit biological, computational and logic criteria associated with your data/questions.
+
+## Basic workflow
+
+**Quality filtering steps**
+
+- `FastQC`: script name...
+- `Fastp`: script name...
+- `FastQC`: **Note**. While reassessing reads post trimming & filtering is essential to ensure these steps were successful, we do not provide an adjusted script for this. Script `xx` can be easily adapted for this.
+
+**Decontamination steps**
+
+- `BBduk`: script name...
+- `Trimmomatic`: script name...
+
+**aDNA authentication**
+
+- `Seqtk`: script name...
+- `BWA mem`: script name...
+- `SAMtools`: script name...
+- `mapDamage2`: script name...
 
 
