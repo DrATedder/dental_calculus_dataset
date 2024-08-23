@@ -58,7 +58,7 @@ A collection of scripts pertaining to quality filtering, decontamination and aDN
 
 - `Centrifuge`: `centrifuge_OTU_assignment.sh`
 - `Seqtk`: `Seqtk_subset_reads.sh`
-- `BWA mem` & `SAMtools`: script name...
+- `BWA mem` & `SAMtools`: `BWA_mapping.sh`
 - `mapDamage2`: script name...
 
 
