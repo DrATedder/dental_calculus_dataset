@@ -14,7 +14,7 @@ HUMAN_OUT=/path/to/human_subset_reads
 MAPPED_OUTPUT=/path/to/mapped_output
 
 ### Assumes fastq files are named according to a standard convention used in other scripts in this workflow
-for file in ${MAPPED_OUTPUT}/*_postCentrifuge_R1.fastq.gz  
+for file in ${HUMAN_OUTPUT}/*_postCentrifuge_R1.fastq.gz  
   do
   ### Ensure you correct the reference genome file
   bwa mem -t ${SLURM_CPUS_PER_TASK} -M ${REF}/specific_reference_genome_file.fna ${HUMAN_OUT}/${name}_postCentrifuge_R1.fastq.gz ${HUMAN_OUT}/${name}_postCentrifuge_R2.fastq.gz > ${MAPPED_OUTPUT}/${name}_postCentrifuge_Human_pe.sam 
