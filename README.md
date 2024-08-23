@@ -35,6 +35,8 @@ A collection of scripts pertaining to quality filtering, decontamination and aDN
 
 - **Decontamination**: In order to use `BBduk` to decontaminate samples, you must have a 'modern' sample (or experimental equivalent for your question) to use as a source.
 
+- **Genome for mapping**: In order to use `mapDamage2` you need to align your reads to a modern reference genome. Here we use the Human genome `GRCh38.p7` (released 21.03.2016).
+
 
 
 ## Basic workflow
