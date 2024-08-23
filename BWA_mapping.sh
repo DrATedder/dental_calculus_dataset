@@ -16,6 +16,8 @@ MAPPED_OUTPUT=/path/to/mapped_output
 ### Assumes fastq files are named according to a standard convention used in other scripts in this workflow
 for file in ${HUMAN_OUTPUT}/*_postCentrifuge_R1.fastq.gz  
   do
+  name=$(basename ${file} _postCentrifuge_R1.fastq.gz)
+  echo $name
   ### Ensure you correct the reference genome file
   bwa mem -t ${SLURM_CPUS_PER_TASK} -M ${REF}/specific_reference_genome_file.fna ${HUMAN_OUT}/${name}_postCentrifuge_R1.fastq.gz ${HUMAN_OUT}/${name}_postCentrifuge_R2.fastq.gz > ${MAPPED_OUTPUT}/${name}_postCentrifuge_Human_pe.sam 
   samtools view -Sb ${MAPPED_OUTPUT}/${name}_postCentrifuge_Human_pe.sam > ${MAPPED_OUTPUT}/${name}_postCentrifuge_Human_pe.bam
