@@ -12,7 +12,7 @@ DECONTAM_FILES=/path/to/decontaminated_reads
 PAIRED_OUTPUT=/path/to/paired_output_directory
 
 ### Assumes fastq files are named according to a standard convention used in previous scripts
-for file in *_1_decontam.fastq.gz
+for file in ${DECONTAM_FILES}/*_1_decontam.fastq.gz
    do
    name=$(basename ${file} _1_decontam.fastq.gz)
    echo $name
