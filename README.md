@@ -40,7 +40,7 @@ A collection of scripts pertaining to quality filtering, decontamination and aDN
 **Quality filtering steps**
 
 - `FastQC`: `fastQC_assess_read_quality.sh`
-- `Fastp`: script name...
+- `Fastp`:  `fastp_quality_filtering.sh`
 - `FastQC`: **Note**. While reassessing reads post trimming & filtering is essential to ensure these steps were successful, we do not provide an adjusted script for this. Script `fastQC_assess_read_quality.sh` can be easily adapted for this.
 
 **Decontamination steps**
