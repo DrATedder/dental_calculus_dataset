@@ -47,7 +47,7 @@ A collection of scripts pertaining to quality filtering, decontamination and aDN
 
 **Decontamination steps**
 
-- `BBduk`: script name...
+- `BBduk`: `BBduk_decontamination.sh`
 - `Trimmomatic`: script name...
 
 **aDNA authentication**
