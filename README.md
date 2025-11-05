@@ -1,5 +1,5 @@
 # dental_calculus_dataset
-A collection of scripts pertaining to quality filtering, decontamination and aDNA authentication steps undertaken in Standeven et al. 2024
+A collection of scripts pertaining to quality filtering, decontamination and aDNA authentication steps undertaken in Standeven et al. 2025
 
 ## Software pre-requisites
 
@@ -65,6 +65,6 @@ A collection of scripts pertaining to quality filtering, decontamination and aDN
 
 If you use `dental_calculus_dataset` in your study, please reference it using the details below. Please note, this workflow leverages a lot of existing software (listed and linked above), please ensure you also give appropriate credit to the authors of those software.
 
-Francesca J. Standeven†, Gwyn Dahlquist-Axe†, Jessica Hendy, Sarah Fiddyment, Malin Holst, Krista McGrath, Matthew Collins, Gavin Thomas, Sandy MacDonald, Josef Wagner, Amy Mundorff, Conor J. Meehan, Andrew Tedder, Camilla F. Speller (2024) **An extensive archaeological dental calculus dataset spanning 5000 years for ancient human oral microbiome research**
+Francesca J. Standeven†, Gwyn Dahlquist-Axe†, Jessica Hendy, Sarah Fiddyment, Malin Holst, Krista McGrath, Matthew Collins, Amy Mundorff, Anita Radini, Josef Wagner, Amy Mundorff, Conor J. Meehan, Andrew Tedder, Camilla F. Speller (2025) **An extensive archaeological dental calculus dataset spanning 5000 years for ancient human oral microbiome research**; *Data in Brief* DOI: [10.1016/j.dib.2025.111770](https://doi.org/10.1016/j.dib.2025.111770) 
 
 
